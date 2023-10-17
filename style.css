@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --secondary: hsla(216, 12%, 54%, 0.205);
+    --Orange: hsl(25, 97%, 53%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Overpass';
+    font-size: 15px;
+    background-color: var(--Very-Dark-Blue);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hidden{
+    display: none;
+}
+.card{
+    background-color: var(--Dark-Blue);
+    width: 400px;
+    line-height: 1.5rem;
+    border-radius: 1.5rem;
+}
+.container{
+    padding: 30px;
+}
+
+.star_icon{
+    padding: 10px;
+    background-color: var(--Very-Dark-Blue);
+    border-radius: 50% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.tittle{
+    color: var(--White);
+    margin-bottom: 1rem;
+}
+
+.description{
+    color: var(--Light-Grey);
+    margin-bottom: 1.5rem;
+}
+
+.ratings{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.ratings span{ 
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--secondary);
+    color: var(--Light-Grey);
+    cursor: pointer;
+}
+.ratings span:hover{
+    background-color: var(--Light-Grey);
+    color: var(--White);
+}
+.button{
+    padding: 10px;
+    width: 100%;
+    font-size: medium;
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    background-color:var(--Orange);
+    color: var(--White);
+    font-size: smaller;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.button:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+.thankyou_card{
+    text-align: center;
+    padding: 10px;
+}
+
+.thankyou_card img{
+    margin-bottom: 10px;
+}
+
+.thankyou_card .chip{
+    background-color: var(--secondary);
+    color: var(--Orange);
+    margin: 1.5em auto;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 1.5rem;
+}
+
+.checked{
+    background-color: var(--Orange) !important;
+    color: var(--White) !important;
+}
